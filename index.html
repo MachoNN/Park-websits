@@ -11,47 +11,91 @@
 <title>Talofa!</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1 fixed-top">
         <div class="container">
-            <a href="" class="nav-brand">Talofa!</a>
+            <a class="navbar-brand" href="#">Talofa</a>
             <button 
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navmenu">
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu"> 
             <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navmenu">
+            <div class="collapse navbar-collapse" id="#navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="about" class="nav-link">About</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#gallery" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a href="#location" class="nav-link">Location</a>
-                    </li>
+                    </li>    
                 </ul>
-            </div>
-        </div>    
-    </nav>
-
-    <!-- Main section -->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-2">
-                <h3> column 1</h3>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <p>Ut enim ad minim veniam...</p>
-            </div>
-            <div class="col-lg-2">
-                <h3> column 2</h3>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <p>Ut enim ad minim veniam...</p>
             </div>
         </div>
     </nav>
+    
+    <!-- Main section -->
+    <div id="home" class="jumbotron jumbotron-fluid">
+        <div class="container-fluid bg-secondary bg-opacity-10 text-center p-5 mt-5" >
+            <h1>Am. Samoa National Park</h1>
+            <img src="static/AM.samoa flowers.jpeg" alt="forest overlooking the ocean & rock formation" class="img-fluid col-lg-8 col-md-6">
+        </div>
+    </div>
 
+    <!-- Gallery panel -->
+    <div id="gallery" class="container text-center pt-5 mt-5">    
+        <h3>Photo Gallery</h3><br>
+        <div class="row">
+            <div class="col-sm-3 shadow">
+                <p>Beach In Ntl Park</p>
+                <img src="static/ta'u beach ntl pk am samoa.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3 shadow"> 
+                <p>Caped Fruit Bird</p>
+                <img src="static/purple caped fruit dove am samoa.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3 shadow"> 
+                <p>Sea Turtle</p>
+                <img src="static/sea turtle ntl pk am samoa.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3 shadow">
+                <p>Land and Sea</p>
+                <img src="static/national park samoa.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div><br>
+      
+    <div class="container text-center">    
+        <div class="row">
+            <div class="col-sm-3 shadow">
+                <p>Milky Way</p>
+                <img src="static/milky way am samoa.png" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3 shadow"> 
+                <p>Water Fall</p>
+                <img src="static/national park am samoa.3.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3 shadow"> 
+                <p>Coral</p>
+                <img src="static/Beautiful Photos Of Nature.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3 shadow">
+                <p>King Fisher</p>
+                <img src="static/king fisher ntl pk am samoa.jpeg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div><br><br>
+
+    <!-- Footer panel -->
+    <footer id="location" class="container-fluid justify-content-center text-center text-light bg-info p-2">
+        <h3>Location</h3><br>
+        <img src="static/Am. ntl parks copy.jpg" alt="map">
+        </footer>
+
+               <!--fix hamburger (nav bar toggler right) drop down it doesnt show link when clicked in smallest resize, add alt titles, be creative, map/milky way leaks over when in small page , figure out how to make main page image full.  -->
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
